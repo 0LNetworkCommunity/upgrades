@@ -22,8 +22,8 @@ compiled_package_info:
     additional_named_addresses: {}
     architecture: ~
     fetch_deps_only: false
-    skip_fetch_latest_git_deps: false
-    bytecode_version: ~
+    skip_fetch_latest_git_deps: true
+    bytecode_version: 6
 dependencies:
   - LibraFramework
   - MoveStdlib
