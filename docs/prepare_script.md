@@ -26,7 +26,7 @@ In this example we want to change the nomimal consensus reward due to a migratio
 
 ### Script
 
-By default it prepares a `multi_step_proposal`. We dont need this as we are upgrading a parameter, not the framework.
+By default it prepares a `multi_step_proposal`. We will need to add the vector of the previous hash but because we are doing a single proposal we can use an empty vector as there are no other proposal scripts.
 
 #### Before
 
@@ -54,7 +54,11 @@ script {
   use ol_framework::proof_of_fee;
 
   fun main(proposal_id: u64){
-      let framework_signer = diem_governance::resolve(proposal_id, @0000000000000000000000000000000000000000000000000000000000000001);
+      let framework_signer = diem_governance::resolve_multi_step_proposal(
+          proposal_id,
+          @0000000000000000000000000000000000000000000000000000000000000001,
+          vector[],
+      );
       // Set the nominal_reward to the value prior to v7.0.1 hard fork
       proof_of_fee::genesis_migrate_reward(&framework_signer, 178204815);
   }
@@ -63,7 +67,11 @@ script {
 
 ## Compile
 
-`libra move compile --package-dir ~/upgrades/proposals/up-0002/patch_nominal_reward_migration_error/`
+To compile we simply use the same command we originally generated the template with
+
+`libra-framework governance --script-dir <Script Dir>  --framework-local-dir ~/libra-framework/framework/ --only-make-template`
+
+eg `libra-framework governance --script-dir ~/upgrades/proposals/up-0002/ --framework-local-dir  ~/libra-framework/framework/`
 
 ## Submit Proposal
 
