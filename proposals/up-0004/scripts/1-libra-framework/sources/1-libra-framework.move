@@ -1,7 +1,7 @@
 // Upgrade proposal for package `LibraFramework`
 
-// Framework commit hash: 8801304c99b9eb0c71abbb7ad814f4d18159a428
-// Builder commit hash: 668b4953b660fba9313da90f0e7c5f9479f3ad39
+// Framework commit hash: c42227f7dc9823513b3478b40d27aebc506efa90
+// Builder commit hash: c12fb71a5c766a9e58dd9eaa3b7590cba4d46430
 
 // Next step script hash:
 
@@ -9676,6 +9676,6 @@ script {
             0u8,0u8,0u8,0u8,0u8,1u8,12u8,86u8,101u8,110u8,100u8,111u8,114u8,83u8,116u8,100u8,108u8,105u8,98u8,0u8,
         ];
         code::publish_package_txn(&framework_signer, metadata_chunk1, code);
-        version::upgrade_set_git(&framework_signer, x"8801304c99b9eb0c71abbb7ad814f4d18159a428")
+        version::upgrade_set_git(&framework_signer, x"c42227f7dc9823513b3478b40d27aebc506efa90")
     }
 }
