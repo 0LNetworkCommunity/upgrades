@@ -3,7 +3,7 @@
 // Framework commit hash: 6781a0e23cc3a40892c03dec7ba4d28e07c69500
 // Builder commit hash: 6c6bac86059ab9b6f2080bb31450be23340945ae
 
-// Next step script hash: 73910e8032090b04a314c8f0ab6dc1fd3283a7d9005c85eca0220ec6ccba23a5
+// Next step script hash: a8d8c630971c555c312b3f03beeb901a17afa5f3f9f27b8872f577b5e630a838
 
 // source digest: 97EF0B8134DCF72CE2FD67755B33A3B35BFB6A557D261B2C89027478E99E231A
 script {
@@ -17,7 +17,7 @@ script {
         let framework_signer = diem_governance::resolve_multi_step_proposal(
             proposal_id,
             @0000000000000000000000000000000000000000000000000000000000000001,
-            vector[115u8,145u8,14u8,128u8,50u8,9u8,11u8,4u8,163u8,20u8,200u8,240u8,171u8,109u8,193u8,253u8,50u8,131u8,167u8,217u8,0u8,92u8,133u8,236u8,160u8,34u8,14u8,198u8,204u8,186u8,35u8,165u8,],
+            vector[168u8,216u8,198u8,48u8,151u8,28u8,85u8,92u8,49u8,43u8,63u8,3u8,190u8,235u8,144u8,26u8,23u8,175u8,165u8,243u8,249u8,242u8,123u8,136u8,114u8,245u8,119u8,181u8,230u8,48u8,168u8,56u8,],
         );
         let code = vector::empty();
         let code_chunk0 =
@@ -619,7 +619,7 @@ script {
         ];
         vector::push_back(&mut code, code_chunk10);
         let metadata_chunk1 = vector[
-            10u8,77u8,111u8,118u8,101u8,83u8,116u8,100u8,108u8,105u8,98u8,1u8,0u8,0u8,0u8,0u8,0u8,0u8,0u8,
+            10u8,77u8,111u8,118u8,101u8,83u8,116u8,100u8,108u8,105u8,98u8,0u8,0u8,0u8,0u8,0u8,0u8,0u8,0u8,
             0u8,64u8,57u8,55u8,69u8,70u8,48u8,66u8,56u8,49u8,51u8,52u8,68u8,67u8,70u8,55u8,50u8,67u8,69u8,50u8,
             70u8,68u8,54u8,55u8,55u8,53u8,53u8,66u8,51u8,51u8,65u8,51u8,66u8,51u8,53u8,66u8,70u8,66u8,54u8,65u8,
             53u8,53u8,55u8,68u8,50u8,54u8,49u8,66u8,50u8,67u8,56u8,57u8,48u8,50u8,55u8,52u8,55u8,56u8,69u8,57u8,
