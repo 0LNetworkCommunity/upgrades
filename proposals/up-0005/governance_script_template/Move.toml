@@ -1,0 +1,14 @@
+[package]
+name = 'enter_governance_mode'
+version = '1.0.0'
+authors = []
+license = ''
+
+[addresses]
+
+[dev-addresses]
+[dependencies.LibraFramework]
+# NOTE:  full path here (not relative)
+local = '../libra-framework/framework/libra-framework'
+
+[dev-dependencies]
