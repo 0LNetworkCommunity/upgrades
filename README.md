@@ -5,5 +5,5 @@ This is the Libra Framework Upgrade repository used for coordination by the comm
 This repository contains a historical reference of all upgrades since release-7.0.0
 
 ## References
-- [Hot Upgrades](docs/hot_upgrades.md)
-- [Prepare a Script](docs/prepare_script.md)
+- [Hot Upgrades](https://docs.openlibra.io/validators/hot-upgrades)
+- [Governance Scripts](https://docs.openlibra.io/validators/governance-tx)
