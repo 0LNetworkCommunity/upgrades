@@ -1,0 +1,16 @@
+[package]
+name = 'governance_mode'
+version = '1.0.0'
+authors = []
+license = ''
+
+[addresses]
+
+[dev-addresses]
+[dependencies.LibraFramework]
+# NOTE to PROPOSER: this must be the fully qualified path to the Libra Framework
+# Do not use relative paths ~ or $HOME
+# DEVS: let's modify the CLI tool so it's actually fetching this from cli args.
+local = '<PATH/TO/YOUR/SOURCE/libra-framework/framework/libra-framework'
+
+[dev-dependencies]
